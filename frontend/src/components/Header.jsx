@@ -1,11 +1,12 @@
 import { Navbar, Nav, Container, NavDropdown, Badge } from 'react-bootstrap';
 import { FaShoppingCart, FaUser } from 'react-icons/fa';
+import index from '../assets/styles/index.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate, Link } from 'react-router-dom';
 import { useLogoutMutation } from '../slices/usersApiSlice';
 import { logout } from '../slices/authSlice';
 import SearchBox from './SearchBox';
-import logo from '../assets/logo.png';
+import swiftcartLogo from '../assets/swiftcartLogo.png';
 import { resetCart } from '../slices/cartSlice';
 
 const Header = () => {
@@ -32,11 +33,11 @@ const Header = () => {
 
   return (
     <header>
-      <Navbar bg='primary' variant='dark' expand='lg' collapseOnSelect>
+      <Navbar className='bg-custom' variant='dark' expand='lg' collapseOnSelect>
         <Container>
           <Navbar.Brand as={Link} to='/'>
-            <img src={logo} alt='ProShop' />
-            ProShop
+            <img src={swiftcartLogo} alt='SwiftCart' />
+            SwiftCart
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
