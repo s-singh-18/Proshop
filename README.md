@@ -1,4 +1,4 @@
-# ProShop eCommerce app
+# SwiftCart eCommerce app
 
 > eCommerce platform built with the MERN stack & Redux.
 
